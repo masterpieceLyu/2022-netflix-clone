@@ -37,7 +37,6 @@
     ></script>
   </head>
   <body>
-    <!--
     <nav class="nav_bar">
       <div class="nav_bar-logo">
         <a href=""
@@ -107,7 +106,6 @@
         <button class="movieBtn movieBtn10"></button>
       </div>
     </div>
--->
     <header class="header">
       <img
         src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Logonetflix.png/1600px-Logonetflix.png?20170904093427)"
@@ -124,22 +122,22 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <img
-                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
-                alt=""
-              />
+                <img
+                  src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
+                  alt=""
+                />
             </div>
             <div class="swiper-slide">
-              <img
+                <img
                 src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
                 alt=""
-              />
+                />
             </div>
             <div class="swiper-slide">
-              <img
-                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
-                alt=""
-              />
+                <img
+                  src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
+                  alt=""
+                />
             </div>
           </div>
           <!-- If we need navigation buttons -->
@@ -148,11 +146,10 @@
         </div>
       </section>
 
-      <!--
       <script>
         const swiper = new Swiper(".swiper", {
           // Optional parameters
-          direction: "vertical",
+          direction: "horizontal",
           loop: true,
 
           // Navigation arrows
@@ -160,9 +157,37 @@
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
           },
+
+          slidesPerView: 3
         });
       </script>
-      -->
     </main>
+
+    <!-- Swiper.js JS 파트 -->
+    <!--
+    <script>  
+      const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });    
+    </script>
+    -->
   </body>
 </html>
