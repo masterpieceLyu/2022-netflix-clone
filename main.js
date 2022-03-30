@@ -1,10 +1,9 @@
-let maintext = document.querySelector("h1");
-let maintext2 = document.querySelector("h2");
+let maintext = document.querySelector(".signInCmt");
+let maintext2 = document.querySelector(".signInCmtsm");
 let maintext3 = document.querySelector(".signInBtn");
 
 window.addEventListener("scroll", function () {
   let value = this.scrollY;
-  console.log(value);
 
   if (value > 400) {
     maintext.style.animation = "slideback 1.3s ease-in-out forwards";
