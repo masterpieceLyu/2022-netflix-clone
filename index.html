@@ -7,7 +7,6 @@
     <title>NewNetflix</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="swiper.css" />
-    <script src="main.js"></script>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -65,7 +64,6 @@
         <i class="fa-solid fa-caret-down"></i>
       </div>
     </nav>
-
     <section class="topSection">
       <h1 class="signInCmt">See What's Next?</h1>
       <h2 class="signInCmtsm">WATCH ANYWHERE CANCEL ANYTIME.</h2>
@@ -73,7 +71,8 @@
     </section>
 
     </header>
-    <main>
+    <main class="movieSlider">
+      <span class="thumbSection__header-title" >• 지금 뜨는 콘텐츠</span>
       <section class="thumbSection">
         <!-- Slider main container -->
         <div class="thumbTiles swiper">
@@ -124,7 +123,76 @@
             </div>
             <div class="swiper-slide">
               <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTY0h__LnUQIg11iWTgZujPVV775m0wv6blE1BsRdhYEVSLIQnsnYndyPVr6KvjXe8_gOknVzTF25RpM9rnc0IIvwfS0pewmGgQyDbZrwUDJ8UbSFJPM1ZYeKZQu3kwiu2lZdnRE6RoSp21GCuAnHD0aYSZ8MCxilMQXYP54oJb0_6WsxZV6JDsbxsM_.webp?r=029"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfRunIgRuibk6xdSBIdlJVg3r3rA3gPYCJA70qUFLC4db7nAJPL3r_15txbOjQnALfQ_WM02ejbym72r3KIoWUYTcUY.webp?r=8d0"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe8btJxu1Ssw7Y8KFAUMcUOEJ4rhiK-fM3jlWg_KJF-ITzvC8ja0esjL9RMsQW95kdz9uPJgmptagCyYIBdKEDO-avo.webp?r=480"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+    <main class="movieSlider">
+      <span class="thumbSection__header-title" >• 내가 찜한 콘텐츠</span>
+      <section class="thumbSection">
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTnH5C3O7mZwOOtGVe1Pe_vFAeolOywpzXuArM2YVBqSVMnue-seEtEpy2SW92XSZqTYfOyv3GQT7a9dbTUYEkqXYg8.webp?r=a67"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfRunIgRuibk6xdSBIdlJVg3r3rA3gPYCJA70qUFLC4db7nAJPL3r_15txbOjQnALfQ_WM02ejbym72r3KIoWUYTcUY.webp?r=8d0"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfL3Q0aoYBnNU4nDzDOFXVIG17MTnP3bYbECiyKKv1A62gXZd6H6RDxAUImEgrHJU9JxDD5-kxU6IiappsEcI1kCGHg.webp?r=b21"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVKRKKbBB2zhPgJ-X3iILLnZk_zAyWmqwh7q7Hs9sIlOzjAylo1ieX9cRPriOqIymNH-2lZNqM4nYj8Enq9JJEntiUKpYRVZk7X-RAKyN4EH1f7EPFEuD09JW2iy.jpg?r=19c"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
                 src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRw3D4mK1LR_MB8Fb7WYMwkrewW6u66hFDcRKIsXEI0nk13FRX8Uf5TKVg-jyppvSPmd1aeuSELlMetYXJtdGIAJKZg.webp?r=f35"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWZha4d8fTcrtyGNezyGjrPVIsFkgHOGtghjjHS_jA1VfKTmusXM_VB5bIrSu-QKvq4deS-XotUHc1lCMuGHzPQDf-bxN9JWpbcXR7tGpp5ivoFyQB1-Wzsug9U5.jpg?r=537"
                 alt=""
               />
             </div>
@@ -152,31 +220,183 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-
-      <script>
-        const swiper = new Swiper(".swiper", {
-          // Optional parameters
-
-          direction: "horizontal",
-          loop: true,
-          slidesPerView: 6,
-          speed: 1300,
-
-          // Navigation arrows
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-
-          breakpoints: {
-            640: {
-              slidesPerView:6,
-              slidesPerGroup:6,
-
-            }
-          }
-        });
-      </script>
     </main>
+    <main class="movieSlider">
+      <span class="thumbSection__header-title" >• 한국 영화</span>
+      <section class="thumbSection">
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTnH5C3O7mZwOOtGVe1Pe_vFAeolOywpzXuArM2YVBqSVMnue-seEtEpy2SW92XSZqTYfOyv3GQT7a9dbTUYEkqXYg8.webp?r=a67"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfRunIgRuibk6xdSBIdlJVg3r3rA3gPYCJA70qUFLC4db7nAJPL3r_15txbOjQnALfQ_WM02ejbym72r3KIoWUYTcUY.webp?r=8d0"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfL3Q0aoYBnNU4nDzDOFXVIG17MTnP3bYbECiyKKv1A62gXZd6H6RDxAUImEgrHJU9JxDD5-kxU6IiappsEcI1kCGHg.webp?r=b21"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVKRKKbBB2zhPgJ-X3iILLnZk_zAyWmqwh7q7Hs9sIlOzjAylo1ieX9cRPriOqIymNH-2lZNqM4nYj8Enq9JJEntiUKpYRVZk7X-RAKyN4EH1f7EPFEuD09JW2iy.jpg?r=19c"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRw3D4mK1LR_MB8Fb7WYMwkrewW6u66hFDcRKIsXEI0nk13FRX8Uf5TKVg-jyppvSPmd1aeuSELlMetYXJtdGIAJKZg.webp?r=f35"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWZha4d8fTcrtyGNezyGjrPVIsFkgHOGtghjjHS_jA1VfKTmusXM_VB5bIrSu-QKvq4deS-XotUHc1lCMuGHzPQDf-bxN9JWpbcXR7tGpp5ivoFyQB1-Wzsug9U5.jpg?r=537"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTY0h__LnUQIg11iWTgZujPVV775m0wv6blE1BsRdhYEVSLIQnsnYndyPVr6KvjXe8_gOknVzTF25RpM9rnc0IIvwfS0pewmGgQyDbZrwUDJ8UbSFJPM1ZYeKZQu3kwiu2lZdnRE6RoSp21GCuAnHD0aYSZ8MCxilMQXYP54oJb0_6WsxZV6JDsbxsM_.webp?r=029"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfRunIgRuibk6xdSBIdlJVg3r3rA3gPYCJA70qUFLC4db7nAJPL3r_15txbOjQnALfQ_WM02ejbym72r3KIoWUYTcUY.webp?r=8d0"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe8btJxu1Ssw7Y8KFAUMcUOEJ4rhiK-fM3jlWg_KJF-ITzvC8ja0esjL9RMsQW95kdz9uPJgmptagCyYIBdKEDO-avo.webp?r=480"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+    <main class="movieSlider">
+      <span class="thumbSection__header-title" >• 할리우드 액션 영화</span>
+      <section class="thumbSection">
+        <!-- Slider main container -->
+        <div class="thumbTiles swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTXm-kVsaxlDGirBNUSXNjGuxsL7iK4-BwL4QZVmbSjB0KE4_x03nJIHurA5Tbm2hoUuGv9vTuk4NheG4IKUrsG0ic0MSLo_HwZqLSWXYC1hATvKYGlc60Am3pgv.jpg?r=033"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTnH5C3O7mZwOOtGVe1Pe_vFAeolOywpzXuArM2YVBqSVMnue-seEtEpy2SW92XSZqTYfOyv3GQT7a9dbTUYEkqXYg8.webp?r=a67"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfRunIgRuibk6xdSBIdlJVg3r3rA3gPYCJA70qUFLC4db7nAJPL3r_15txbOjQnALfQ_WM02ejbym72r3KIoWUYTcUY.webp?r=8d0"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfL3Q0aoYBnNU4nDzDOFXVIG17MTnP3bYbECiyKKv1A62gXZd6H6RDxAUImEgrHJU9JxDD5-kxU6IiappsEcI1kCGHg.webp?r=b21"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVKRKKbBB2zhPgJ-X3iILLnZk_zAyWmqwh7q7Hs9sIlOzjAylo1ieX9cRPriOqIymNH-2lZNqM4nYj8Enq9JJEntiUKpYRVZk7X-RAKyN4EH1f7EPFEuD09JW2iy.jpg?r=19c"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRw3D4mK1LR_MB8Fb7WYMwkrewW6u66hFDcRKIsXEI0nk13FRX8Uf5TKVg-jyppvSPmd1aeuSELlMetYXJtdGIAJKZg.webp?r=f35"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWZha4d8fTcrtyGNezyGjrPVIsFkgHOGtghjjHS_jA1VfKTmusXM_VB5bIrSu-QKvq4deS-XotUHc1lCMuGHzPQDf-bxN9JWpbcXR7tGpp5ivoFyQB1-Wzsug9U5.jpg?r=537"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTY0h__LnUQIg11iWTgZujPVV775m0wv6blE1BsRdhYEVSLIQnsnYndyPVr6KvjXe8_gOknVzTF25RpM9rnc0IIvwfS0pewmGgQyDbZrwUDJ8UbSFJPM1ZYeKZQu3kwiu2lZdnRE6RoSp21GCuAnHD0aYSZ8MCxilMQXYP54oJb0_6WsxZV6JDsbxsM_.webp?r=029"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfRunIgRuibk6xdSBIdlJVg3r3rA3gPYCJA70qUFLC4db7nAJPL3r_15txbOjQnALfQ_WM02ejbym72r3KIoWUYTcUY.webp?r=8d0"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://occ-0-993-1360.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABe8btJxu1Ssw7Y8KFAUMcUOEJ4rhiK-fM3jlWg_KJF-ITzvC8ja0esjL9RMsQW95kdz9uPJgmptagCyYIBdKEDO-avo.webp?r=480"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+    </main>
+
+
+
+
+     <!-- swiper Js -->
+     <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 6,
+        speed: 700,
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView:6,
+            slidesPerGroup:3,
+          }
+        }
+      });
+     </script>
+         <script src="main.js"></script>
   </body>
 </html>
