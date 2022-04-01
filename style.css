@@ -1,3 +1,5 @@
+/* Base */
+
 :root {
   --colorOne: #141414;
   --colortwo: #5c5c5c;
@@ -10,72 +12,7 @@ body {
   background: var(--colorOne);
 }
 
-.nav_bar {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  z-index: 99;
-  padding: 20px 0 20px 0;
-  margin: 50px;
-  align-items: center;
-  background: linear-gradient(to bottom, var(--colorOne), transparent);
-}
-
-.nav_bar-logo {
-  padding: 0 55px 0 55px;
-}
-
-.nav_bar-logo img {
-  width: 100px;
-}
-
-.nav_bar-menus {
-  display: flex;
-  color: white;
-  font-size: 15px;
-  font-family: sans-serif;
-  margin-left: -55%;
-}
-
-.nav_bar-menus a {
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.nav_bar-menus a:hover {
-  color: #e50914;
-  transition: 0.3s ease-in-out;
-}
-
-.nav_bar-icons {
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-
-.nav_bar-icons i {
-  margin: 0px 15px 0px 15px;
-  color: white;
-  font-size: 20px;
-}
-
-.nav_bar-icons i:hover {
-  cursor: pointer;
-  color: #e50914;
-  transition: 0.3s ease-in-out;
-}
-
-.nav_bar-accountDropDown img {
-  margin: 0px -9px 0px 15px;
-  border-radius: 5px;
-  width: 30px;
-  height: 30px;
-}
-
-.fa-caret-down {
-  font-size: 5px;
-}
+/* Section */
 
 .topSection {
   width: 100%;

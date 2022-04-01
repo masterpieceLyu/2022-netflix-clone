@@ -1,0 +1,108 @@
+.nav_bar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  padding: 20px 0;
+  background: linear-gradient(to bottom, var(--colorOne), transparent);
+}
+
+.nav_bar-logo {
+  margin: 0 50px;
+}
+
+.nav_bar-logo img {
+  width: 100px;
+}
+
+.nav_bar-logoAndMenu {
+  display: flex;
+  align-items: center;
+}
+
+.nav_bar-menus {
+  display: flex;
+}
+
+.nav_bar-menus a {
+  color: rgb(230, 230, 230);
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+.nav_bar-menus a:hover {
+  color: white;
+  transform: scale(1.03);
+  transition: 0.2s ease-in-out;
+}
+
+.nav_bar-icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 50px;
+}
+
+.nav_bar-icons i:nth-child(1),
+.nav_bar-icons i:nth-child(2) {
+  margin: 0px 15px 0px 15px;
+  color: rgb(230, 230, 230);
+  font-size: 20px;
+}
+
+.nav_bar-icons i:last-child {
+  color: rgb(230, 230, 230);
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.nav_bar-icons i:nth-child(1):hover,
+.nav_bar-icons i:nth-child(2):hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.15);
+  transition: 0.2s ease-in-out;
+}
+
+.nav_bar-accountSetting {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_bar-accountDropDown img {
+  margin: 0px -6px 0px 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 30px;
+  height: 30px;
+}
+
+.nav_bar-accountSetting:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.15);
+  transition: 0.2s ease-in-out;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.dep1 > li {
+  display: inline-block;
+  text-align: center;
+}
+
+.dep1 > li > a:hover ~ ul {
+  display: block;
+}
+
+.dep2 {
+  display: none;
+}
