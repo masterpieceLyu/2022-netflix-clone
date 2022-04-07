@@ -1,10 +1,10 @@
 .badge {
   position: absolute;
   left: 113px;
-  top: 12px;
-  background-color: red;
-  width: 20px;
-  height: 20px;
+  top: 23px;
+  background-color: #ba090b;
+  width: 17px;
+  height: 17px;
   border-radius: 15px;
   font-size: 12px;
   font-family: sans-serif;
