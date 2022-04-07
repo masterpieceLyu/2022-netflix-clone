@@ -48,6 +48,47 @@ li {
   transition: 0.2s ease-in-out;
 }
 
+.container1 {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+
+.container1 .searchBox {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  font-size: 11pt;
+  float: right;
+  padding: 0 40px 0 15px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  outline: none;
+}
+
+.container1 .searchBox::placeholder {
+  color: var(--colorWhite);
+}
+
+.container1 .searchIcon {
+  position: absolute;
+  top: 11px;
+  left: 250px;
+  z-index: 1;
+  color: var(--colorWhite);
+}
+
+.container1 .searchBox:hover,
+.container1 .searchBox:focus,
+.container1 .searchBox:active {
+  width: 200px;
+  outline: none;
+  border: 1px solid var(--colorWhite);
+  transition: width 0.55s ease-in-out;
+}
+
 /* Navigation Icons */
 .nav_bar-icons {
   position: relative;
@@ -62,7 +103,7 @@ li {
 }
 
 .nav_bar-icons > ul > li:first-child i,
-.nav_bar-icons > ul > li:nth-child(2) i {
+.fa-bell {
   margin: 0px 15px 0px 15px;
   color: rgb(230, 230, 230);
   font-size: 20px;
@@ -83,10 +124,10 @@ li {
 .nav_bar-icons i:nth-child(1):hover {
   cursor: pointer;
   color: white;
-  animation: searchScale 2.5s ease-in-out infinite;
+  /* animation: searchScale 2.5s ease-in-out infinite; */
 }
 
-.nav_bar-icons ul > li:nth-child(2) i:hover {
+.fa-bell:hover {
   cursor: pointer;
   color: white;
   animation: ringTheBell 5s ease-in-out infinite;
