@@ -2,7 +2,7 @@
   position: absolute;
   left: 363px;
   top: 23px;
-  background-color: #ba090b;
+  background-color: var(--colorRed);
   width: 17px;
   height: 17px;
   border-radius: 15px;

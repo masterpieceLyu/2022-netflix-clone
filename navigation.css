@@ -48,45 +48,23 @@ li {
   transition: 0.2s ease-in-out;
 }
 
-.container1 {
-  width: 300px;
-  vertical-align: middle;
-  white-space: nowrap;
+.search {
   position: relative;
-}
-
-.container1 .searchBox {
   width: 40px;
   height: 40px;
-  background: transparent;
-  border: none;
-  font-size: 11pt;
-  float: right;
-  padding: 0 40px 0 15px;
-  color: rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  outline: none;
+  background: aqua;
 }
 
-.container1 .searchBox::placeholder {
-  color: var(--colorWhite);
-}
-
-.container1 .searchIcon {
+.search .searchIcon {
   position: absolute;
-  top: 11px;
-  left: 250px;
-  z-index: 1;
-  color: var(--colorWhite);
-}
-
-.container1 .searchBox:hover,
-.container1 .searchBox:focus,
-.container1 .searchBox:active {
-  width: 200px;
-  outline: none;
-  border: 1px solid var(--colorWhite);
-  transition: width 0.55s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
 }
 
 /* Navigation Icons */
