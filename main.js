@@ -6,7 +6,7 @@ let maintext3 = document.querySelector(".signInBtn");
 window.addEventListener("scroll", function () {
   let value = this.scrollY;
 
-  if (value > 400) {
+  if (value > 350) {
     maintext.style.animation = "slideback 1.3s ease-in-out forwards";
   } else {
     maintext.style.animation = "leftslide 1.3s ease-in-out";
@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   let value = this.scrollY;
 
-  if (value > 400) {
+  if (value > 350) {
     maintext2.style.animation = "slideback 1.3s ease-in-out forwards";
   } else {
     maintext2.style.animation = "leftslide 1.3s ease-in-out";
@@ -26,7 +26,7 @@ window.addEventListener("scroll", function () {
 window.addEventListener("scroll", function () {
   let value = this.scrollY;
 
-  if (value > 400) {
+  if (value > 350) {
     maintext3.style.animation = "slideback 1.3s ease-in-out forwards";
   } else {
     maintext3.style.animation = "leftslide 1.3s ease-in-out";
@@ -49,7 +49,7 @@ function toggleVideo() {
 }
 
 /*
-const movie = document.querySelector(".swiper-slide");
+const movie = document.querySelector(".movie");
 const trailer = document.querySelector("trailer");
 
 movie.onclick = function () {

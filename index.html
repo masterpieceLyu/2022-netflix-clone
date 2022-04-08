@@ -81,9 +81,11 @@
     </nav>
 
     <section class="topSection">
-      <h1 class="signInCmt">See What's Next?</h1>
-      <h2 class="signInCmtsm">WATCH ANYWHERE CANCEL ANYTIME.</h2>
-      <button class="signInBtn">JOIN FREE FOR A MONTH</button>
+      <div class="topSection-cm">
+        <h1 class="signInCmt">See What's Next?</h1>
+        <h2 class="signInCmtsm">WATCH ANYWHERE CANCEL ANYTIME.</h2>
+        <button class="signInBtn">JOIN FREE FOR A MONTH</button>
+      </div>
     </section>
 
     <main class="movieSlider">
@@ -175,7 +177,7 @@
         direction: "horizontal",
         loop: true,
         slidesPerView: 6,
-        speed: 700,
+        speed: 400,
 
         // Navigation arrows
         navigation: {
@@ -183,11 +185,25 @@
           prevEl: ".swiper-button-prev",
         },
         breakpoints: {
-          640: {
-            slidesPerView: 6,
-            slidesPerGroup: 3,
+          1200:{
+            slidesPerView: 6
           },
-        },
+          1000:{
+            slidesPerView: 5
+          },
+          800:{
+            slidesPerView: 4
+          },
+          600:{
+            slidesPerView: 3
+          },
+          400:{
+            slidesPerView: 2
+          },
+          200:{
+            slidesPerView: 1
+          }
+        }
       });
     </script>
     <script src="main.js"></script>

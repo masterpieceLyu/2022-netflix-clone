@@ -37,57 +37,55 @@ body {
   height: 100vh;
   background: url(https://assets.nflxext.com/ffe/siteui/vlv3/9737377e-a430-4d13-ad6c-874c54837c49/945eec79-6856-4d95-b4c6-83ff5292f33d/KR-ko-20220111-popsignuptwoweeks-perspective_alpha_website_large.jpg);
   margin-bottom: 60px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: sans-serif;
 }
 
 .topSection:before {
   content: "";
   background: linear-gradient(to right, black, transparent);
   position: absolute;
+  top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
 
+.topSection-cm {
+  position: relative;
+  margin-left: 50px;
+}
+
 .signInCmt {
   color: var(--colorWhite);
-  font-size: 90px;
-  position: absolute;
-  top: 330px;
-  left: 70px;
-  font-family: sans-serif;
+  font-size: 80px;
   animation: leftslide 1.7s ease-in-out;
+  margin: 0;
 }
 
 .signInCmtsm {
   color: var(--colorWhite);
   font-size: 30px;
-  position: absolute;
-  top: 480px;
-  left: 70px;
-  font-family: sans-serif;
+  margin: 0 0 60px 0;
   animation: leftslide 1.7s ease-in-out;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 .signInBtn {
   width: 300px;
   height: 50px;
-  position: absolute;
-  top: 590px;
-  left: 70px;
   border: 0;
   background: #e50914;
   color: var(--colorWhite);
   border-radius: 10px;
   font-size: 15px;
-  letter-spacing: 2.7px;
+  letter-spacing: 2.5px;
   animation: leftslide 1.7s ease-in-out;
 }
 
 .signInBtn:hover {
+  cursor: pointer;
   font-size: 16px;
   transition: 0.3s ease-in-out;
 }
@@ -122,5 +120,42 @@ button:hover {
   to {
     top: 500px;
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1073px) {
+  /* search box animation need anything */
+}
+
+@media screen and (max-width: 810px) {
+  .nav_bar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    padding: 10px 0;
+    background: linear-gradient(to bottom, var(--colorOne), transparent);
+  }
+
+  .signInCmt {
+    font-size: 60px;
+  }
+  .signInCmtsm {
+    font-size: 20px;
+  }
+  .signInBtn {
+    width: 200px;
+    height: 36.5px;
+    font-size: 10px;
+    letter-spacing: 1.7px;
+  }
+  .nav_bar-logoAndMenu {
+    flex-direction: column;
+  }
+  .nav_bar-menus {
+    margin: 10px;
   }
 }
