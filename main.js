@@ -34,9 +34,25 @@ window.addEventListener("scroll", function () {
 });
 
 /* Search animation */
-
 const searchIcon = document.querySelector(".searchIcon");
 const search = document.querySelector(".search");
 searchIcon.onclick = function () {
   search.classList.toggle("active");
 };
+
+/* Toggling Vedio */
+function toggleVideo() {
+  const trailer = document.querySelector(".trailer");
+  const video = document.querySelector("video");
+  trailer.classList.toggle("active");
+  video.currentTime = 0;
+}
+
+/*
+const movie = document.querySelector(".swiper-slide");
+const trailer = document.querySelector("trailer");
+
+movie.onclick = function () {
+  trailer.classList.toggle("active");
+};
+*/

@@ -1,0 +1,34 @@
+.trailer {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.trailer video {
+  max-width: 1200px;
+  outline: none;
+}
+
+.trailer-close {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  cursor: pointer;
+  color: white;
+  font-size: 100px;
+}
+
+.trailer.active {
+  visibility: visible;
+  opacity: 1;
+}
