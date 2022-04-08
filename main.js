@@ -34,3 +34,10 @@ window.addEventListener("scroll", function () {
 });
 
 /* Search animation */
+
+const searchIcon = document.querySelectorAll(".searchIcon1");
+const search = document.querySelectorAll(".search");
+
+searchIcon.addEventListener("click", function () {
+  search.classList.toggle("active");
+});

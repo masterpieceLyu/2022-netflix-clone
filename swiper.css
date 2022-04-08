@@ -21,6 +21,10 @@
   border-radius: 8px;
 }
 
+.swiper-slide img:hover {
+  cursor: pointer;
+}
+
 .thumbSection__header-title {
   display: flex;
   color: var(--colorWhite);
