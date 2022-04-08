@@ -35,9 +35,8 @@ window.addEventListener("scroll", function () {
 
 /* Search animation */
 
-const searchIcon = document.querySelectorAll(".searchIcon");
-const search = document.querySelectorAll(".search");
-
-searchIcon.addEventListener("click", function () {
+const searchIcon = document.querySelector(".searchIcon");
+const search = document.querySelector(".search");
+searchIcon.onclick = function () {
   search.classList.toggle("active");
-});
+};

@@ -52,7 +52,9 @@ li {
   position: relative;
   width: 40px;
   height: 40px;
-  background: aqua;
+  background: transparent;
+  overflow: hidden;
+  transition: width 0.5s ease-in;
 }
 
 .search .searchIcon {
@@ -65,6 +67,30 @@ li {
   left: 0;
   width: 40px;
   height: 40px;
+}
+
+.search .searchInput {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search .searchInput input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: white;
+  background: rgba(1, 1, 1, 0.5);
+  font-size: 15px;
+  padding-left: 80px;
+}
+
+.search.active {
+  width: 300px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 /* Navigation Icons */
@@ -143,6 +169,18 @@ li {
   background-color: black;
 }
 
+.dropDownMenu::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  right: 25px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid white;
+  border-right: 10px solid transparent;
+  transform: rotate(45deg);
+}
+
 .dropDownMenu > ul {
   display: block;
   padding: 5px 10px 0px 10px;
@@ -169,8 +207,8 @@ li {
 }
 
 .nav_bar-icons > ul > li:nth-child(3) > .dropDownMenu > ul > li i {
-  color: white;
-  font-size: 18px;
+  color: var(--colorWhite);
+  font-size: 17px;
 }
 
 .nav_bar-icons > ul > li:last-child > .dropDownMenu > .setting > li {
@@ -196,7 +234,7 @@ li {
 }
 
 .nav_bar-icons > ul > li:last-child > ul > ul > li:hover > a {
-  border-bottom: 1px white;
+  border-bottom: 1px solid var(--colorWhite);
 }
 
 .nav_bar-icons > ul > li:last-child > div:hover > i {
