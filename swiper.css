@@ -5,10 +5,6 @@
   margin: 0 15px 0 15px;
 }
 
-/*
-    .swiper-slide라는 div안에 들어간 img의 크기는 지정해줘야함
-  */
-
 .swiper-slide {
   display: flex;
   justify-content: center;
@@ -107,4 +103,72 @@
 
 .movieSlider {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .swiper-slide img {
+    width: 210px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .swiper-slide img {
+    width: 190px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .swiper-slide img {
+    width: 170px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+@media screen and (max-width: 900px) {
+  .swiper-slide img {
+    width: 150px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .swiper-slide img {
+    width: 130px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+@media screen and (max-width: 700px) {
+  .swiper-slide img {
+    width: 110px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+}
+@media screen and (max-width: 600px) {
+  .swiper-slide img {
+    width: 90px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+@media screen and (max-width: 500px) {
+  .swiper-slide img {
+    width: 70px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .swiper-slide img {
+    width: 50px;
+    height: auto;
+    transition: 0.6 ease-in-out;
+  }
 }

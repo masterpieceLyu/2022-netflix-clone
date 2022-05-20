@@ -32,6 +32,7 @@ li {
 /* Navigation menu */
 .nav_bar-menus {
   display: flex;
+  padding-left: -500px;
 }
 
 .nav_bar-menus a {
